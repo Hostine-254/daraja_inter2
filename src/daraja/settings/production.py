@@ -41,6 +41,9 @@ INSTALLED_APPS = [
 
     #External apis
     'rest_framework',
+
+    #my apps
+    'mpesa',
 ]
 
 MIDDLEWARE = [
@@ -143,7 +146,7 @@ REST_FRAMEWORK = {
     # Use Django's standard `django.contrib.auth` permissions,
     # or allow read-only access for unauthenticated users.
     'DEFAULT_PERMISSION_CLASSES': [
-        'rest_framework.permissions.IsAunthenticatedOrReadOnly'
+        'rest_framework.permissions.IsAuthenticatedOrReadOnly'
     ]
 }
 
